@@ -7,3 +7,4 @@ openai
 python-dotenv
 streamlit
 openai==0.28
+azure-ai-formrecognizer
