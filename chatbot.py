@@ -10,19 +10,19 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # 🔹 Configuración de Azure Language Service (Conversational)
-azure_endpoint = os.getenv("AZURE_LANGUAGE_ENDPOINT")
-azure_key = os.getenv("AZURE_LANGUAGE_KEY")
+azure_endpoint = st.secrets["AZURE_LANGUAGE_ENDPOINT"]
+azure_key = st.secrets["AZURE_LANGUAGE_KEY"]
 
 # 🔹 Configuración de MongoDB
-MONGO_URI = os.getenv("MONGO_URI")
+MONGO_URI = st.secrets["MONGO_URI"]
 mongo_client = MongoClient(MONGO_URI)
 db = mongo_client["ordenadores_db"]
 collection = db["ordenadores"]
 
 # 🔹 Configuración de OpenAI en Azure
 openai.api_type = "azure"
-openai.api_base = os.getenv("AZURE_OPENAI_ENDPOINT")
-openai.api_key = os.getenv("AZURE_OPENAI_KEY")
+openai.api_base = st.secrets["AZURE_OPENAI_ENDPOINT"]
+openai.api_key = st.secrets["AZURE_OPENAI_KEY"]
 openai.api_version = "2024-07-01-preview"
 DEPLOYMENT_NAME = "gpt-4o-mini"  # ⚠️ Reemplázalo con el nombre real de tu deployment en Azure OpenAI
 
