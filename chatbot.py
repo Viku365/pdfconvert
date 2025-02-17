@@ -24,13 +24,23 @@ openai.api_type = "azure"
 openai.api_base = st.secrets["AZURE_OPENAI_ENDPOINT"]
 openai.api_key = st.secrets["AZURE_OPENAI_KEY"]
 openai.api_version = "2024-07-01-preview"
-DEPLOYMENT_NAME = "gpt-4o-mini"  # ⚠️ Reemplázalo con el nombre real de tu deployment en Azure OpenAI
+DEPLOYMENT_NAME = "gpt-4o-mini"
 
 # 🔹 URL base de Blob Storage para los PDF
 BLOB_STORAGE_URL = "https://tajamarstorage.blob.core.windows.net/articles/"
 
 # 🔹 Inicializar cliente de Azure para Conversational Service
 conv_client = ConversationAnalysisClient(azure_endpoint, AzureKeyCredential(azure_key))
+
+# 🔹 Variables de estado en `session_state`
+if "compra_realizada" not in st.session_state:
+    st.session_state.compra_realizada = False
+if "mensaje_compra" not in st.session_state:
+    st.session_state.mensaje_compra = None
+if "ordenadores_recomendados" not in st.session_state:
+    st.session_state.ordenadores_recomendados = []
+if "user_input" not in st.session_state:
+    st.session_state.user_input = ""
 
 # 🔹 Función para obtener el intent y las entidades
 def get_intent_and_entities(text):
@@ -44,7 +54,6 @@ def get_intent_and_entities(text):
             }
         )
 
-        # Extraer intent y entidades
         intent = response["result"]["prediction"]["topIntent"]
         entities = {entity["category"]: entity["text"] for entity in response["result"]["prediction"]["entities"]}
 
@@ -62,37 +71,38 @@ def buscar_ordenador(criterios):
     if not criterios:
         return [], []
 
-    query_exact = {"$and": []}
     query_relajada = {"$or": []}
-    entidades_no_encontradas = []
 
-    # Crear consulta exacta y relajada
     for key, value in criterios.items():
-        query_exact["$and"].append({f"json_data.{key}.text": {"$regex": f"^{value}$", "$options": "i"}})
         query_relajada["$or"].append({f"json_data.{key}.text": {"$regex": f".*{value}.*", "$options": "i"}})
 
-    print(f"🧐 Query Exacta para MongoDB: {query_exact}")  # Debug
-    print(f"🧐 Query Relajada para MongoDB: {query_relajada}")  # Debug
+    print(f"🧐 Query Relajada para MongoDB: {query_relajada}")
 
-    # Buscar coincidencia exacta
-    resultados_exactos = list(collection.find(query_exact))
+    resultados = list(collection.find(query_relajada))
+
+    if resultados:
+        print(f"✅ Se encontraron {len(resultados)} coincidencias parciales.")
+        return resultados, []
     
-    if resultados_exactos:
-        print(f"✅ Se encontró una coincidencia exacta: {len(resultados_exactos)}")
-        return resultados_exactos, []
+    print(f"❌ No se encontró ningún ordenador con las especificaciones buscadas.")
+    return [], list(criterios.keys())
 
-    # Si no hay coincidencias exactas, buscar coincidencias parciales
-    resultados_relajados = list(collection.find(query_relajada))
-
-    if resultados_relajados:
-        print(f"⚠️ No se encontró una coincidencia exacta, pero sí {len(resultados_relajados)} coincidencias parciales.")
-        return resultados_relajados, entidades_no_encontradas
-
-    # Si no encontró nada, indicar qué entidades no coincidieron
-    entidades_no_encontradas = list(criterios.keys())
-    print(f"❌ No se encontró ningún ordenador con las siguientes entidades: {entidades_no_encontradas}")
-
-    return [], entidades_no_encontradas
+# 🔹 Función para generar respuesta de OpenAI
+def generar_respuesta_openai(mensaje):
+    """Llama a OpenAI para obtener respuestas naturales."""
+    try:
+        respuesta = openai.ChatCompletion.create(
+            engine=DEPLOYMENT_NAME,
+            messages=[
+                {"role": "system", "content": "Eres un asistente experto en ordenadores. Responde con información concisa y útil."},
+                {"role": "user", "content": mensaje}
+            ],
+            temperature=0.7,
+            max_tokens=150
+        )
+        return respuesta['choices'][0]['message']['content']
+    except Exception as e:
+        return f"❌ Error en OpenAI: {str(e)}"
 
 # 🔹 Función para formatear la respuesta con especificaciones
 def formatear_respuesta_ordenador(ordenadores):
@@ -104,58 +114,61 @@ def formatear_respuesta_ordenador(ordenadores):
         specs += f"💾 RAM: {ordenador.get('json_data', {}).get('Memoria RAM', [{}])[0].get('text', 'Desconocido')}\n"
         specs += f"⚡ Procesador: {ordenador.get('json_data', {}).get('Procesador', [{}])[0].get('text', 'Desconocido')}\n"
         specs += f"🎮 Gráfica: {ordenador.get('json_data', {}).get('Grafica', [{}])[0].get('text', 'Desconocida')}\n"
-        specs += f"💾 Disco Duro: {ordenador.get('json_data', {}).get('Disco Duro', [{}])[0].get('text', 'Desconocido')}\n"
-        specs += f"🖥 Pantalla: {ordenador.get('json_data', {}).get('Pantalla', [{}])[0].get('text', 'Desconocida')}\n"
         pdf_link = BLOB_STORAGE_URL + ordenador["document_id"]
 
-        respuestas.append((specs, pdf_link, ordenador["_id"]))
+        respuestas.append((specs, pdf_link, str(ordenador["_id"])))
 
-    return respuestas  # Retorna una lista de tuplas (especificaciones, link, ID)
+    return respuestas
+
+# 🔹 Función para realizar la compra
+def realizar_compra(ordenador_id):
+    """Marca la compra como realizada y limpia el chat."""
+    st.session_state.compra_realizada = True
+    st.session_state.mensaje_compra = f"✅ Compra realizada con éxito."
+    st.session_state.ordenadores_recomendados = []
+    st.session_state.user_input = ""
+    st.rerun()
 
 # ---------- INTERFAZ CON STREAMLIT ----------
-st.title("Chatbot - Búsqueda de Ordenadores")
+st.title("💻 Chatbot - Búsqueda y Compra de Ordenadores")
 
-user_input = st.text_input("Escribe tu consulta aquí...", "")
+if not st.session_state.compra_realizada:
+    st.session_state.user_input = st.text_input("Escribe tu consulta aquí...", value=st.session_state.user_input)
 
-if st.button("Buscar"):
-    if user_input:
-        loading_message = st.empty()  
-        loading_message.info("🔍 Procesando tu consulta...")  
+    if st.button("Buscar"):
+        if st.session_state.user_input:
+            # 🔹 LIMPIAR ANTERIOR CONSULTA ANTES DE PROCESAR UNA NUEVA
+            st.session_state.ordenadores_recomendados = []
+            st.session_state.mensaje_compra = None
 
-        intent, entidades = get_intent_and_entities(user_input)
+            loading_message = st.empty()  # Mensaje de carga
+            loading_message.info("🔍 Consultando...")  # Mostrar mensaje de carga
 
-        loading_message.empty()
+            intent, entidades = get_intent_and_entities(st.session_state.user_input)
 
-        if intent == "Order_Computer":
-            ordenadores_encontrados, _ = buscar_ordenador(entidades)
+            loading_message.empty()  # 🔹 Borra el mensaje de carga una vez obtenido el resultado
 
-            if ordenadores_encontrados:
-                st.success("🛒 Te recomendamos este ordenador para tu compra:")
-                respuestas = formatear_respuesta_ordenador(ordenadores_encontrados)
+            if intent in ["None", "General_Information"]:
+                respuesta = generar_respuesta_openai(st.session_state.user_input)
+                st.write(respuesta)
 
-                for specs, pdf_link, ordenador_id in respuestas:
-                    st.write(specs)
-                    st.markdown(f"📄 [Ver ficha completa]({pdf_link})", unsafe_allow_html=True)
-                    
-                    if st.button(f"🛍️ Comprar", key=ordenador_id):
-                        st.success("✅ Compra realizada con éxito.")
+            elif intent in ["Order_Computer", "Search_Computer"]:
+                ordenadores_encontrados, _ = buscar_ordenador(entidades)
 
-            else:
-                st.warning("❌ No encontramos un ordenador con esas especificaciones disponibles para compra.")
+                if ordenadores_encontrados:
+                    st.session_state.ordenadores_recomendados = formatear_respuesta_ordenador(ordenadores_encontrados)
 
-        elif intent == "Search_Computer":
-            ordenadores_encontrados, entidades_no_encontradas = buscar_ordenador(entidades)
+if not st.session_state.compra_realizada and st.session_state.ordenadores_recomendados:
+    st.success("🛒 Te recomendamos estos ordenadores:")
+    for specs, pdf_link, ordenador_id in st.session_state.ordenadores_recomendados:
+        st.write(specs)
+        st.markdown(f"📄 [Ver ficha completa]({pdf_link})", unsafe_allow_html=True)
+        if st.button(f"🛍️ Comprar", key=f"comprar_{ordenador_id}"):
+            realizar_compra(ordenador_id)
 
-            if ordenadores_encontrados:
-                st.success("🎯 Hemos encontrado estos ordenadores que se adaptan a tu búsqueda:")
-                respuestas = formatear_respuesta_ordenador(ordenadores_encontrados)
-
-                for specs, pdf_link, _ in respuestas:
-                    st.write(specs)
-                    st.markdown(f"📄 [Ver ficha completa]({pdf_link})", unsafe_allow_html=True)
-
-        else:
-            st.warning("⚠️ No entendí tu consulta, intenta de nuevo.")
-
-    else:
-        st.warning("⚠️ Por favor, ingresa un mensaje.")
+if st.session_state.compra_realizada:
+    st.success(st.session_state.mensaje_compra)
+    if st.button("🔄 Nueva búsqueda"):
+        st.session_state.compra_realizada = False
+        st.session_state.mensaje_compra = None
+        st.rerun()
