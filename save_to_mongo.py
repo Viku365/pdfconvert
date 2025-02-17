@@ -1,12 +1,13 @@
 import os
 from pymongo import MongoClient
 from dotenv import load_dotenv
+import streamlit as st
 
 # Función para guardar solo el archivo JSON y el document_id en MongoDB
 def save_pdf_and_json_to_db(file_name, json_data):
     # Cargar las variables de entorno
     load_dotenv()
-    MONGO_URI = os.getenv("MONGO_URI")  # Conectar con MongoDB
+    MONGO_URI = st.secrets("MONGO_URI")  # Conectar con MongoDB
     client = MongoClient(MONGO_URI)
     db = client["ordenadores_db"]
     collection = db["ordenadores"]

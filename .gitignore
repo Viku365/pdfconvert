@@ -12,3 +12,6 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
+
+# Evita subir el archivo con credenciales
+secrets.toml
