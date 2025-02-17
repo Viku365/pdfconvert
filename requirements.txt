@@ -1,3 +1,8 @@
+azure-ai-language-conversations
 azure-ai-textanalytics
+azure-core
+azure-identity
 pymongo
+openai
 python-dotenv
+streamlit
