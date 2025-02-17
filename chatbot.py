@@ -94,24 +94,6 @@ def buscar_ordenador(criterios):
 
     return [], entidades_no_encontradas
 
-
-# 🔹 Función para generar respuesta de OpenAI
-def generar_respuesta_openai(mensaje):
-    """Llama a OpenAI para obtener respuestas naturales."""
-    try:
-        respuesta = openai.ChatCompletion.create(
-            engine=DEPLOYMENT_NAME,
-            messages=[
-                {"role": "system", "content": "Eres un asistente experto en ordenadores. Responde con información concisa y útil."},
-                {"role": "user", "content": mensaje}
-            ],
-            temperature=0.7,
-            max_tokens=150  # ⚠️ Limitamos a 150 tokens para respuestas más cortas
-        )
-        return respuesta['choices'][0]['message']['content']
-    except Exception as e:
-        return f"❌ Error en OpenAI: {str(e)}"
-
 # 🔹 Función para formatear la respuesta con especificaciones
 def formatear_respuesta_ordenador(ordenadores):
     """Genera una respuesta con las especificaciones de múltiples ordenadores."""
@@ -126,70 +108,54 @@ def formatear_respuesta_ordenador(ordenadores):
         specs += f"🖥 Pantalla: {ordenador.get('json_data', {}).get('Pantalla', [{}])[0].get('text', 'Desconocida')}\n"
         pdf_link = BLOB_STORAGE_URL + ordenador["document_id"]
 
-        respuestas.append((specs, pdf_link))
+        respuestas.append((specs, pdf_link, ordenador["_id"]))
 
-    return respuestas  # Retorna una lista de tuplas (especificaciones, link)
-
+    return respuestas  # Retorna una lista de tuplas (especificaciones, link, ID)
 
 # ---------- INTERFAZ CON STREAMLIT ----------
-st.title("💬 Chatbot - Búsqueda de Ordenadores")
+st.title("Chatbot - Búsqueda de Ordenadores")
 
 user_input = st.text_input("Escribe tu consulta aquí...", "")
 
 if st.button("Buscar"):
     if user_input:
-        st.info("🔍 Procesando tu consulta...")
+        loading_message = st.empty()  
+        loading_message.info("🔍 Procesando tu consulta...")  
 
-        # Obtener intent y entidades del usuario
         intent, entidades = get_intent_and_entities(user_input)
 
-        if intent == "None" or intent == "General_Information":
-            respuesta = generar_respuesta_openai(user_input)
-            st.success("🤖 Respuesta de OpenAI:")
-            st.write(respuesta)
+        loading_message.empty()
+
+        if intent == "Order_Computer":
+            ordenadores_encontrados, _ = buscar_ordenador(entidades)
+
+            if ordenadores_encontrados:
+                st.success("🛒 Te recomendamos este ordenador para tu compra:")
+                respuestas = formatear_respuesta_ordenador(ordenadores_encontrados)
+
+                for specs, pdf_link, ordenador_id in respuestas:
+                    st.write(specs)
+                    st.markdown(f"📄 [Ver ficha completa]({pdf_link})", unsafe_allow_html=True)
+                    
+                    if st.button(f"🛍️ Comprar", key=ordenador_id):
+                        st.success("✅ Compra realizada con éxito.")
+
+            else:
+                st.warning("❌ No encontramos un ordenador con esas especificaciones disponibles para compra.")
 
         elif intent == "Search_Computer":
             ordenadores_encontrados, entidades_no_encontradas = buscar_ordenador(entidades)
 
             if ordenadores_encontrados:
                 st.success("🎯 Hemos encontrado estos ordenadores que se adaptan a tu búsqueda:")
-                
                 respuestas = formatear_respuesta_ordenador(ordenadores_encontrados)
 
-                for specs, pdf_link in respuestas:
+                for specs, pdf_link, _ in respuestas:
                     st.write(specs)
                     st.markdown(f"📄 [Ver ficha completa]({pdf_link})", unsafe_allow_html=True)
 
-            else:
-                if entidades_no_encontradas:
-                    st.warning(f"❌ No encontramos un ordenador con {' y '.join(entidades_no_encontradas)}, pero estos modelos podrían interesarte:")
-
-                    
-                    # Buscar alternativas eliminando las entidades no encontradas
-                    entidades_parciales = {k: v for k, v in entidades.items() if k not in entidades_no_encontradas}
-                    ordenadores_similares, _ = buscar_ordenador(entidades_parciales)
-
-                    if ordenadores_similares:
-                        respuestas_similares = formatear_respuesta_ordenador(ordenadores_similares)
-                        for specs, pdf_link in respuestas_similares:
-                            st.write(specs)
-                            st.markdown(f"📄 [Ver ficha completa]({pdf_link})", unsafe_allow_html=True)
-                    else:
-                        st.warning("⚠️ No encontramos ningún ordenador con especificaciones similares.")
-
-                else:
-                    st.warning("❌ No encontramos un ordenador que coincida con tu búsqueda.")
-
-        elif intent == "Price_Information":
-            ordenadores_encontrados, _ = buscar_ordenador(entidades)
-            if ordenadores_encontrados:
-                for ordenador in ordenadores_encontrados:
-                    precio = ordenador.get('json_data', {}).get('precio', [{}])[0].get('text', 'No disponible')
-                    st.success(f"💰 El precio del {ordenador['json_data']['Marca'][0]['text']} {ordenador['json_data']['Modelo'][0]['text']} es de {precio}")
-            else:
-                st.warning("❌ No encontramos información de precios para tu búsqueda.")
-
         else:
             st.warning("⚠️ No entendí tu consulta, intenta de nuevo.")
+
     else:
         st.warning("⚠️ Por favor, ingresa un mensaje.")
