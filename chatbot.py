@@ -260,7 +260,7 @@ if not st.session_state.compra_realizada:
                 else:
                     st.warning("❌ No se encontraron ordenadores con esas características.")
 
-            elif intent == "General_Information":
+            elif intent in ["General_Information", "None"]:
                 # 🔹 Verifica si la consulta es sobre ordenadores antes de llamar a OpenAI
                 keywords = ["ordenador", "pc", "portátil", "cpu", "gpu", "ram", "procesador", "gráfica", "tarjeta gráfica"]
                 if any(word in st.session_state.user_input.lower() for word in keywords):
@@ -269,9 +269,6 @@ if not st.session_state.compra_realizada:
                 else:
                     st.warning("❌ No puedo responder preguntas que no sean sobre ordenadores.")
 
-            else:
-                # 🔹 Mensaje para preguntas fuera de contexto
-                st.warning("❌ No puedo responderte eso ahora mismo.")
 
 # 🔹 Mostrar ordenadores recomendados
 if not st.session_state.compra_realizada and st.session_state.ordenadores_recomendados:
