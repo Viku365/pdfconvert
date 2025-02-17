@@ -1,0 +1,114 @@
+{
+    "Marca": [
+        {
+            "text": "Lenovo",
+            "confidence_score": 0.96
+        },
+        {
+            "text": "Lenovo",
+            "confidence_score": 0.77
+        }
+    ],
+    "Modelo": [
+        {
+            "text": "ThinkPad X1 2-in-1",
+            "confidence_score": 0.79
+        },
+        {
+            "text": "Lenovo",
+            "confidence_score": 0.85
+        },
+        {
+            "text": "ThinkPad",
+            "confidence_score": 0.69
+        },
+        {
+            "text": "3Y",
+            "confidence_score": 0.78
+        }
+    ],
+    "Empresa": [
+        {
+            "text": "ARTI SOFTWARE TEC. INF. S.L.",
+            "confidence_score": 1.0
+        }
+    ],
+    "Telefono": [
+        {
+            "text": "+34656359467",
+            "confidence_score": 1.0
+        }
+    ],
+    "e-mail": [
+        {
+            "text": "jaromero@artisoft.es",
+            "confidence_score": 1.0
+        }
+    ],
+    "precio": [
+        {
+            "text": "2.788,24 €",
+            "confidence_score": 1.0
+        }
+    ],
+    "Garantia": [
+        {
+            "text": "36meses",
+            "confidence_score": 1.0
+        }
+    ],
+    "Disco Duro": [
+        {
+            "text": "1.024 GB",
+            "confidence_score": 1.0
+        }
+    ],
+    "Procesador": [
+        {
+            "text": "Intel",
+            "confidence_score": 0.61
+        },
+        {
+            "text": "Intel Core\nUltra 7",
+            "confidence_score": 1.0
+        },
+        {
+            "text": "155U",
+            "confidence_score": 0.69
+        }
+    ],
+    "Grafica": [
+        {
+            "text": "Graphics",
+            "confidence_score": 0.96
+        }
+    ],
+    "Pantalla": [
+        {
+            "text": "14 \"",
+            "confidence_score": 1.0
+        }
+    ],
+    "Peso": [
+        {
+            "text": "1,35 kg",
+            "confidence_score": 0.98
+        }
+    ],
+    "Memoria RAM": [
+        {
+            "text": "32 GB",
+            "confidence_score": 1.0
+        },
+        {
+            "text": "32 GB",
+            "confidence_score": 1.0
+        }
+    ],
+    "Sistema Operativo": [
+        {
+            "text": "Windows® 11 Pro",
+            "confidence_score": 0.98
+        }
+    ]
+}

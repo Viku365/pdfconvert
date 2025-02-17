@@ -1,0 +1,86 @@
+{
+    "Empresa": [
+        {
+            "text": "ARTI SOFTWARE TEC. INF. S.L.",
+            "confidence_score": 1.0
+        }
+    ],
+    "Telefono": [
+        {
+            "text": "+34656359467",
+            "confidence_score": 1.0
+        }
+    ],
+    "e-mail": [
+        {
+            "text": "jaromero@artisoft.es",
+            "confidence_score": 1.0
+        }
+    ],
+    "Sistema Operativo": [
+        {
+            "text": "Microsoft",
+            "confidence_score": 0.41
+        },
+        {
+            "text": "Microsoft",
+            "confidence_score": 0.41
+        },
+        {
+            "text": "10",
+            "confidence_score": 0.64
+        }
+    ],
+    "Modelo": [
+        {
+            "text": "Surface Pro 10",
+            "confidence_score": 0.54
+        },
+        {
+            "text": "Surface PRO",
+            "confidence_score": 0.34
+        },
+        {
+            "text": "Slim",
+            "confidence_score": 0.51
+        }
+    ],
+    "precio": [
+        {
+            "text": "2.311,45 €",
+            "confidence_score": 0.99
+        }
+    ],
+    "Disco Duro": [
+        {
+            "text": "512 GB",
+            "confidence_score": 0.62
+        }
+    ],
+    "Procesador": [
+        {
+            "text": "Intel Core\nUltra 7\nModelo",
+            "confidence_score": 0.91
+        },
+        {
+            "text": "17-165U",
+            "confidence_score": 0.78
+        }
+    ],
+    "Pantalla": [
+        {
+            "text": "13 \"",
+            "confidence_score": 0.99
+        }
+    ],
+    "Memoria RAM": [
+        {
+            "text": "32 GB",
+            "confidence_score": 1.0
+        },
+        {
+            "text": "32 GB",
+            "confidence_score": 1.0
+        }
+    ]
+}

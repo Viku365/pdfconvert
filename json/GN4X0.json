@@ -1,0 +1,86 @@
+{
+    "Empresa": [
+        {
+            "text": "ARTI SOFTWARE TEC. INF. S.L.",
+            "confidence_score": 1.0
+        }
+    ],
+    "Telefono": [
+        {
+            "text": "+34656359467",
+            "confidence_score": 1.0
+        }
+    ],
+    "e-mail": [
+        {
+            "text": "jaromero@artisoft.es",
+            "confidence_score": 1.0
+        }
+    ],
+    "precio": [
+        {
+            "text": "2.542,61 €",
+            "confidence_score": 1.0
+        }
+    ],
+    "Garantia": [
+        {
+            "text": "36meses",
+            "confidence_score": 1.0
+        }
+    ],
+    "Disco Duro": [
+        {
+            "text": "1.024 GB",
+            "confidence_score": 1.0
+        }
+    ],
+    "Procesador": [
+        {
+            "text": "Intel Core\nUltra 7\nModelo de procesador\n164U",
+            "confidence_score": 1.0
+        }
+    ],
+    "Pantalla": [
+        {
+            "text": "14 \"",
+            "confidence_score": 1.0
+        }
+    ],
+    "Peso": [
+        {
+            "text": "1,54 kg",
+            "confidence_score": 1.0
+        }
+    ],
+    "Memoria RAM": [
+        {
+            "text": "32 GB",
+            "confidence_score": 1.0
+        },
+        {
+            "text": "32 GB",
+            "confidence_score": 1.0
+        }
+    ],
+    "Sistema Operativo": [
+        {
+            "text": "Windows 11\nPro",
+            "confidence_score": 0.99
+        }
+    ],
+    "Modelo": [
+        {
+            "text": "HD",
+            "confidence_score": 0.75
+        },
+        {
+            "text": "3Y Keep Your HD",
+            "confidence_score": 0.92
+        },
+        {
+            "text": "5Y Keep Your HD",
+            "confidence_score": 0.79
+        }
+    ]
+}

@@ -1,0 +1,84 @@
+{
+    "Empresa": [
+        {
+            "text": "ARTI SOFTWARE TEC. INF. S.L.",
+            "confidence_score": 1.0
+        }
+    ],
+    "Telefono": [
+        {
+            "text": "+34656359467",
+            "confidence_score": 1.0
+        }
+    ],
+    "e-mail": [
+        {
+            "text": "jaromero@artisoft.es",
+            "confidence_score": 1.0
+        }
+    ],
+    "Marca": [
+        {
+            "text": "Dell",
+            "confidence_score": 0.99
+        }
+    ],
+    "Modelo": [
+        {
+            "text": "XPS 13",
+            "confidence_score": 0.98
+        }
+    ],
+    "Memoria RAM": [
+        {
+            "text": "258VEvo32GB1TB",
+            "confidence_score": 0.99
+        }
+    ],
+    "Disco Duro": [
+        {
+            "text": "SSD1",
+            "confidence_score": 0.94
+        },
+        {
+            "text": "1 TB",
+            "confidence_score": 0.99
+        },
+        {
+            "text": "1.000",
+            "confidence_score": 0.99
+        }
+    ],
+    "Pantalla": [
+        {
+            "text": "3.4\"",
+            "confidence_score": 1.0
+        },
+        {
+            "text": "13.4 pulgadas",
+            "confidence_score": 1.0
+        }
+    ],
+    "precio": [
+        {
+            "text": "2.303,03 €",
+            "confidence_score": 1.0
+        }
+    ],
+    "Procesador": [
+        {
+            "text": "Intel Core Ultra 7 (modelo 258V),",
+            "confidence_score": 1.0
+        },
+        {
+            "text": "Intel Arc Graphics 140V,",
+            "confidence_score": 1.0
+        }
+    ],
+    "Garantia": [
+        {
+            "text": "12meses",
+            "confidence_score": 1.0
+        }
+    ]
+}

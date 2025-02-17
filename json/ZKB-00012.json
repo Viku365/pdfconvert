@@ -1,0 +1,146 @@
+{
+    "Empresa": [
+        {
+            "text": "ARTI SOFTWARE TEC. INF. S.L.",
+            "confidence_score": 1.0
+        }
+    ],
+    "Telefono": [
+        {
+            "text": "+34656359467",
+            "confidence_score": 1.0
+        }
+    ],
+    "e-mail": [
+        {
+            "text": "jaromero@artisoft.es",
+            "confidence_score": 1.0
+        }
+    ],
+    "Sistema Operativo": [
+        {
+            "text": "Microsoft",
+            "confidence_score": 0.28
+        },
+        {
+            "text": "Microsoft",
+            "confidence_score": 0.4
+        },
+        {
+            "text": "Windows 11",
+            "confidence_score": 0.87
+        },
+        {
+            "text": "Microsoft",
+            "confidence_score": 0.83
+        }
+    ],
+    "Modelo": [
+        {
+            "text": "Surface",
+            "confidence_score": 0.25
+        },
+        {
+            "text": "13.",
+            "confidence_score": 0.31
+        },
+        {
+            "text": "Thunderbolt",
+            "confidence_score": 0.84
+        }
+    ],
+    "Procesador": [
+        {
+            "text": "i7",
+            "confidence_score": 0.95
+        },
+        {
+            "text": "Intel ® Core™ Ultra 5 135H",
+            "confidence_score": 0.97
+        },
+        {
+            "text": "Intel",
+            "confidence_score": 0.95
+        },
+        {
+            "text": "Core™ Ultra 7 165H",
+            "confidence_score": 0.95
+        },
+        {
+            "text": "Intel Core\nUltra 7",
+            "confidence_score": 1.0
+        },
+        {
+            "text": "165H",
+            "confidence_score": 0.67
+        }
+    ],
+    "precio": [
+        {
+            "text": "2.528,75 €",
+            "confidence_score": 0.99
+        }
+    ],
+    "Pantalla": [
+        {
+            "text": "13,5 o",
+            "confidence_score": 0.98
+        },
+        {
+            "text": "pulgadas",
+            "confidence_score": 0.5
+        },
+        {
+            "text": "18,5",
+            "confidence_score": 0.56
+        },
+        {
+            "text": "13,5 pulgadas",
+            "confidence_score": 1.0
+        },
+        {
+            "text": "13.5\"",
+            "confidence_score": 0.97
+        },
+        {
+            "text": "13,5 \"",
+            "confidence_score": 1.0
+        }
+    ],
+    "Memoria RAM": [
+        {
+            "text": "64 GB",
+            "confidence_score": 0.98
+        },
+        {
+            "text": "Instalada\n32 GB",
+            "confidence_score": 0.86
+        },
+        {
+            "text": "GB",
+            "confidence_score": 0.53
+        }
+    ],
+    "Disco Duro": [
+        {
+            "text": "1 TB",
+            "confidence_score": 0.99
+        },
+        {
+            "text": "1.000 GB",
+            "confidence_score": 0.97
+        }
+    ],
+    "Peso": [
+        {
+            "text": "1,3",
+            "confidence_score": 0.99
+        }
+    ],
+    "Bateria": [
+        {
+            "text": "18,5 h",
+            "confidence_score": 0.9
+        }
+    ]
+}

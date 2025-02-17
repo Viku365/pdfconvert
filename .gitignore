@@ -1,0 +1,14 @@
+# =========================
+# 1. Archivos de configuración/credenciales
+# =========================
+.env
+*.secrets
+*.key
+
+# =========================
+# 2. Cachés y compilados de Python
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd

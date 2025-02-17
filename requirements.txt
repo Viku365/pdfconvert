@@ -1,0 +1,3 @@
+azure-ai-textanalytics
+pymongo
+python-dotenv

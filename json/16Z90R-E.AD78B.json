@@ -1,0 +1,88 @@
+{
+    "Marca": [
+        {
+            "text": "LG",
+            "confidence_score": 0.98
+        }
+    ],
+    "Modelo": [
+        {
+            "text": "gram 16Z90R",
+            "confidence_score": 0.79
+        }
+    ],
+    "Sistema Operativo": [
+        {
+            "text": "Windows 11 Home",
+            "confidence_score": 0.99
+        }
+    ],
+    "Procesador": [
+        {
+            "text": "i7",
+            "confidence_score": 0.98
+        },
+        {
+            "text": "i7-1360P",
+            "confidence_score": 0.99
+        }
+    ],
+    "Memoria RAM": [
+        {
+            "text": "32GB",
+            "confidence_score": 1.0
+        },
+        {
+            "text": "Instalada\n32 GB",
+            "confidence_score": 0.95
+        },
+        {
+            "text": "RAM",
+            "confidence_score": 0.52
+        },
+        {
+            "text": "32 GB",
+            "confidence_score": 0.83
+        }
+    ],
+    "Disco Duro": [
+        {
+            "text": "1TB SSD",
+            "confidence_score": 0.99
+        }
+    ],
+    "Grafica": [
+        {
+            "text": "RTX\n3050",
+            "confidence_score": 0.95
+        }
+    ],
+    "Peso": [
+        {
+            "text": "1,2Kg",
+            "confidence_score": 0.97
+        }
+    ],
+    "Pantalla": [
+        {
+            "text": "22,5h",
+            "confidence_score": 0.91
+        },
+        {
+            "text": "16 \"",
+            "confidence_score": 1.0
+        }
+    ],
+    "Garantia": [
+        {
+            "text": "36meses",
+            "confidence_score": 1.0
+        }
+    ],
+    "Bateria": [
+        {
+            "text": "13,5 h",
+            "confidence_score": 0.96
+        }
+    ]
+}

@@ -1,0 +1,84 @@
+{
+    "Empresa": [
+        {
+            "text": "ARTI SOFTWARE TEC. INF. S.L.",
+            "confidence_score": 1.0
+        },
+        {
+            "text": "AÑOS",
+            "confidence_score": 0.58
+        }
+    ],
+    "Telefono": [
+        {
+            "text": "+34656359467",
+            "confidence_score": 1.0
+        }
+    ],
+    "e-mail": [
+        {
+            "text": "jaromero@artisoft.es",
+            "confidence_score": 1.0
+        }
+    ],
+    "Pantalla": [
+        {
+            "text": "16\",",
+            "confidence_score": 0.96
+        }
+    ],
+    "Bateria": [
+        {
+            "text": "155H",
+            "confidence_score": 0.9
+        }
+    ],
+    "Memoria RAM": [
+        {
+            "text": "32GB",
+            "confidence_score": 0.98
+        }
+    ],
+    "Disco Duro": [
+        {
+            "text": "1TB",
+            "confidence_score": 0.99
+        }
+    ],
+    "Grafica": [
+        {
+            "text": "NVIDIA Geforce RTX 4070",
+            "confidence_score": 0.88
+        },
+        {
+            "text": "NVIDIA",
+            "confidence_score": 0.77
+        },
+        {
+            "text": "Geforce RTX™",
+            "confidence_score": 0.69
+        }
+    ],
+    "Modelo": [
+        {
+            "text": "WINDOWS",
+            "confidence_score": 0.3
+        },
+        {
+            "text": "3",
+            "confidence_score": 0.65
+        }
+    ],
+    "Sistema Operativo": [
+        {
+            "text": "11 HOME",
+            "confidence_score": 0.71
+        }
+    ],
+    "precio": [
+        {
+            "text": "3.247,24 €",
+            "confidence_score": 0.92
+        }
+    ]
+}

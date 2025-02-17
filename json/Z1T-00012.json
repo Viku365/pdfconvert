@@ -1,0 +1,144 @@
+{
+    "Empresa": [
+        {
+            "text": "ARTI SOFTWARE TEC. INF. S.L.",
+            "confidence_score": 1.0
+        }
+    ],
+    "Telefono": [
+        {
+            "text": "+34656359467",
+            "confidence_score": 1.0
+        }
+    ],
+    "e-mail": [
+        {
+            "text": "jaromero@artisoft.es",
+            "confidence_score": 1.0
+        }
+    ],
+    "Sistema Operativo": [
+        {
+            "text": "Microsoft",
+            "confidence_score": 0.27
+        },
+        {
+            "text": "Microsoft",
+            "confidence_score": 0.25
+        },
+        {
+            "text": "®",
+            "confidence_score": 0.33
+        }
+    ],
+    "Modelo": [
+        {
+            "text": "Surface Laptop",
+            "confidence_score": 0.3
+        },
+        {
+            "text": "Surface",
+            "confidence_score": 0.26
+        },
+        {
+            "text": "Premiere",
+            "confidence_score": 0.65
+        },
+        {
+            "text": "Pro",
+            "confidence_score": 0.46
+        }
+    ],
+    "Procesador": [
+        {
+            "text": "Studio 2",
+            "confidence_score": 0.59
+        },
+        {
+            "text": "Laptop Studio",
+            "confidence_score": 0.42
+        },
+        {
+            "text": "Intel Core i7-13800H",
+            "confidence_score": 0.99
+        },
+        {
+            "text": "Intel Core i7",
+            "confidence_score": 0.86
+        },
+        {
+            "text": "i7-13800H",
+            "confidence_score": 0.74
+        }
+    ],
+    "precio": [
+        {
+            "text": "3.785,26 €",
+            "confidence_score": 1.0
+        }
+    ],
+    "Pantalla": [
+        {
+            "text": "14,4\",",
+            "confidence_score": 1.0
+        },
+        {
+            "text": "14,4\".",
+            "confidence_score": 0.83
+        },
+        {
+            "text": "14,4\"",
+            "confidence_score": 1.0
+        },
+        {
+            "text": "14,4 pulgadas",
+            "confidence_score": 0.99
+        },
+        {
+            "text": "14,4 \"",
+            "confidence_score": 0.98
+        }
+    ],
+    "Grafica": [
+        {
+            "text": "NVIDIA",
+            "confidence_score": 0.99
+        },
+        {
+            "text": "RTXTM 4050/4",
+            "confidence_score": 0.82
+        },
+        {
+            "text": "Geforce RTX\n2050",
+            "confidence_score": 0.92
+        }
+    ],
+    "Garantia": [
+        {
+            "text": "36meses",
+            "confidence_score": 1.0
+        }
+    ],
+    "Disco Duro": [
+        {
+            "text": "1.000 GB",
+            "confidence_score": 0.99
+        }
+    ],
+    "Peso": [
+        {
+            "text": "1,98 kg",
+            "confidence_score": 0.9
+        }
+    ],
+    "Memoria RAM": [
+        {
+            "text": "32 GB",
+            "confidence_score": 1.0
+        },
+        {
+            "text": "32 GB",
+            "confidence_score": 1.0
+        }
+    ]
+}

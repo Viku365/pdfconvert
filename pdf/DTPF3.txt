@@ -1,0 +1,230 @@
+Página número: 1
+ARTI Software
+ARTI SOFTWARE TEC. INF. S.L.
+ANTONIO PEREZ 7 4º-4
+28002 MADRID (28)
+Tel: +34656359467
+Fax:
+e-mail: jaromero@artisoft.es
+DELLTechnologies
+Dell XPS 14 9440U7 155H32GB1TB SSD14.5" OLED Touch
+Código: DTPF3
+2.628,52 €
+DELL XPS 14 - Potencia y Diseño Premium para Profesionales Creativos
+· Procesador y Rendimiento:
+· Intel Core Ultra 7 155H (24MB Cache) de 13.ª generación, diseñado para ofrecer un
+rendimiento excepcional en multitarea y aplicaciones intensivas.
+· Rendimiento continuado de 47W para tareas exigentes, ideal para la creación de contenido,
+edición de vídeo y diseño 3D.
+· Hasta 32 GB LPDDR5x-SDRAM para una multitarea rápida y fluida, hasta un 55% más rápida
+que generaciones anteriores.
+· 1000 GB SSD para almacenamiento rápido y amplio, con acceso instantáneo a archivos y
+programas.
+· Gráficos:
+· Intel Arc Graphics para tareas de diseño gráfico y multimedia de alto rendimiento.
+· NVIDIA Geforce RTX 4050 (6GB GDDR6) para rendimiento gráfico avanzado, ideal para
+videojuegos, renderizado 3D y edición profesional.
+· Pantalla:
+· Pantalla táctil de 14,5" 3.2K (3200 x 2000) AMOLED con colores vibrantes y detalles nítidos,
+ideal para profesionales creativos.
+· Dolby Vision para colores brillantes y negros profundos, mejorando la calidad visual.
+· Frecuencia de actualización de 120 Hz para una experiencia fluida y mejor rendimiento de la
+batería al ver contenido estático.
+· Tecnología Eyesafe® para reducir la luz azul y proteger los ojos sin afectar la calidad de los
+colores.
+· Audio y Cámara:
+· Dolby Atmos y Waves MaxxAudio con cuatro altavoces de 8 W, configurados por Jack Joseph
+Puig (ganador de múltiples premios Grammy), para una experiencia de sonido envolvente.
+· Cámara web FHD 1080p de 2MP con IA para una excelente calidad de videollamadas,
+reducción de ruido y mejora de imágenes en condiciones de baja luz.
+· Diseño y Construcción:
+· Aluminio maquinado (CNC) y Cristal Gorilla® Glass 3 para un diseño ligero, robusto y elegante.
+· Dimensiones compactas de solo 18 mm de grosor y peso de 1,68 kg, perfecto para la
+movilidad.
+○
+Disponible en Platinum y Graphite, con acabados tono a tono.
+· Batería y Carga:
+· Batería de larga duración, optimizada con ExpressCharge para una carga rápida y eficiente.
+· Tecnología de optimización de batería con ajustes inteligentes que extienden el tiempo de
+uso.
+· Sostenibilidad y Materiales:
+· Fabricado con un 25% de materiales reciclados y con una reducción del 89% en huella de
+carbono de los materiales.
+· Embalaje reciclable 100% y productos registrados con Energy Star 8.0 y EPEAT Gold.
+· Funciones Adicionales:
+Página número: 2
+DISCO DURO
+· Teclado de alta eficiencia con teclas grandes y profundas para una escritura cómoda.
+· Panel táctil háptico de cristal optimizado, para una experiencia de navegación precisa.
+· Tecla de Windows Copilot para acceder a tu asistente de IA personal, optimizando el
+rendimiento del dispositivo.
+· MyDell para personalizar y optimizar tu dispositivo mediante IA, ajustando la configuración de
+rendimiento, audio, vídeo y batería.
+· Conexión sin esfuerzo con otros dispositivos mediante Dell Pair y Bluetooth.
+· Asistencia personalizada con Dell ProSupport, ofreciendo solución de problemas y cobertura
+de reparaciones basadas en IA.
+· Windows 11 Pro:
+· Mejora de productividad con nuevas herramientas de multitarea para organizar mejor las
+ventanas y cambiar entre tareas de forma eficiente.
+· Herramientas de colaboración avanzada con Teams integrado, ideal para trabajo remoto y
+videoconferencias.
+*Algunos datos de esta descripción pueden ser opcionales y no estar presentes en este código de
+producto específico. Consulte la ficha técnica
+Garantía :
+12meses
+Disco duro
+1.000
+Tipo Soporte 1
+SSD
+Interfaz Soporte 1
+NVMe
+Número Soportes
+1
+GRÁFICA
+Gráfica integrada
+Si
+Fabricante de la
+Nvidia
+Modelo gráfica
+Geforce RTX
+gráfica
+4050
+PROCESADOR
+Familia Procesador
+Intel Core
+Ultra 7
+Modelo de procesador
+155H
+Fabricante procesador
+Intel
+Generación del
+procesador
+Intel Core
+Ultra (Series
+1)
+Número de núcleos de
+procesador
+16
+Frecuencia del
+procesador turbo
+4,8
+PANTALLA
+Tamaño pantalla
+14,5
+Luminosidad
+400
+Tiempo máximo de
+refresco
+120
+DIMENSIONES & PESO
+Pantalla táctil
+Si
+Contraste
+1.000.000
+Espacio de color RGB
+DCI-P3
+Tipo de pantalla
+Tipologia HD
+3.2K
+OLED
+Resolución (Estándar)
+3200 x 2000
+Retroiluminación
+Yes
+Peso sin embalaje
+1,74 kg
+Altura
+1,8 cm
+Ancho
+32
+Profundidad
+21,6 cm
+GENERAL
+Color
+Gris
+Trusted Platform
+Module (TPM)
+Si
+Material Chasis
+Aluminio
+Detección huella
+dactilar
+Si
+Potencia adaptador
+AC
+100
+2 en 1 Detachable
+No
+Convertibili 2 in 1
+No
+Potencia de adaptador
+AC
+100
+CONEXIONES
+Conexión a red móvil
+No
+Ethernet
+No presente
+Puerto HDMI
+Si
+Conexión para
+Dockstation del
+fabricante
+No
+RAM
+Nº total de puertos
+USB
+Porte VGA
+HDMI micro
+No
+Wireless (standard)
+0
+No
+Wifi 6E
+(802.11ax)
+Puertos USB 2.0 High
+Speed Type-A
+Bluetooth
+Si
+Display Port
+No
+Tipo de puerto de
+carga
+0
+USB Type-C
+Puertos USB 3.2 Gen 1
+0
+SuperSpeed (5 Gbps)
+Type-A
+Puerto Thunderbolt
+Si
+Mini Display Port
+No
+RAM Instalada
+32
+RAM Máxima
+32
+Tecnología de la RAM
+LPDDR5X
+Tipo de RAM
+On-board
+UNIDADES ÓPTICAS
+Tipología unidad
+instalada
+N
+TECLADO Y SISTEMA PARA APUNTAR
+Teclado numérico
+No
+Teclado
+retroiluminado
+Si
+AUDIO
+Micrófono Integrado
+Si
+Altavoces (Fabricante)
+Waves
+BATERÍA
+Número celdas
+6
+Capacidad de batería
+69,5

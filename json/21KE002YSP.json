@@ -1,0 +1,118 @@
+{
+    "Marca": [
+        {
+            "text": "Lenovo",
+            "confidence_score": 0.95
+        },
+        {
+            "text": "Lenovo",
+            "confidence_score": 0.73
+        }
+    ],
+    "Modelo": [
+        {
+            "text": "ThinkPad X1 2-in-1",
+            "confidence_score": 0.61
+        },
+        {
+            "text": "Lenovo",
+            "confidence_score": 0.77
+        },
+        {
+            "text": "ThinkPad",
+            "confidence_score": 0.7
+        },
+        {
+            "text": "2-",
+            "confidence_score": 0.53
+        },
+        {
+            "text": "3Y International Upgrade",
+            "confidence_score": 0.93
+        }
+    ],
+    "Empresa": [
+        {
+            "text": "ARTI SOFTWARE TEC. INF. S.L.",
+            "confidence_score": 0.99
+        }
+    ],
+    "Telefono": [
+        {
+            "text": "+34656359467",
+            "confidence_score": 1.0
+        }
+    ],
+    "e-mail": [
+        {
+            "text": "jaromero@artisoft.es",
+            "confidence_score": 1.0
+        }
+    ],
+    "precio": [
+        {
+            "text": "2.546,24 €",
+            "confidence_score": 1.0
+        }
+    ],
+    "Garantia": [
+        {
+            "text": "36meses",
+            "confidence_score": 1.0
+        }
+    ],
+    "Disco Duro": [
+        {
+            "text": "512 GB",
+            "confidence_score": 0.97
+        }
+    ],
+    "Procesador": [
+        {
+            "text": "Intel",
+            "confidence_score": 0.78
+        },
+        {
+            "text": "Intel Core\nUltra 7",
+            "confidence_score": 0.99
+        },
+        {
+            "text": "155U",
+            "confidence_score": 0.71
+        }
+    ],
+    "Grafica": [
+        {
+            "text": "Graphics",
+            "confidence_score": 0.87
+        }
+    ],
+    "Pantalla": [
+        {
+            "text": "14 \"",
+            "confidence_score": 1.0
+        }
+    ],
+    "Peso": [
+        {
+            "text": "1,35 kg",
+            "confidence_score": 0.95
+        }
+    ],
+    "Memoria RAM": [
+        {
+            "text": "16 GB",
+            "confidence_score": 1.0
+        },
+        {
+            "text": "16 GB",
+            "confidence_score": 1.0
+        }
+    ],
+    "Sistema Operativo": [
+        {
+            "text": "Windows® 11 Pro",
+            "confidence_score": 0.98
+        }
+    ]
+}

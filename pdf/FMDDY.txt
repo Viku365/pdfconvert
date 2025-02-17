@@ -1,0 +1,275 @@
+Página número: 1
+ARTI Software
+ARTI SOFTWARE TEC. INF. S.L.
+ANTONIO PEREZ 7 4º-4
+28002 MADRID (28)
+Tel: +34656359467
+Fax:
+e-mail: jaromero@artisoft.es
+DELLTechnologies
+Dell XPS 13 9350U7 258VEvo32GB1TB SSD13.4" OLED Touch
+Código: FMDDY
+2.303,03 €
+El DELL XPS 13 9350 es un portátil de alta gama que combina potencia, diseño compacto y características
+avanzadas, ideal tanto para profesionales como para usuarios exigentes. A continuación, te ofrecemos una
+descripción detallada de sus características:
+· Tipo de producto y diseño: Se trata de un portátil con un factor de forma tipo concha, lo que significa
+que su diseño es compacto y cerrado, fácil de transportar y manejar en cualquier entorno.
+· Procesador: Equipado con un Intel Core Ultra 7 (modelo 258V), este procesador de última generación
+está diseñado para ofrecer un rendimiento excepcional en tareas tanto cotidianas como avanzadas. La
+tecnología Ultra de Intel permite que el dispositivo maneje múltiples aplicaciones y cargas de trabajo
+de manera eficiente.
+· Pantalla: El DELL XPS 13 9350 cuenta con una pantalla táctil de 13.4 pulgadas (34 cm). La resolución
+2.8K (2880 x 1800 píxeles) proporciona imágenes nítidas y detalles precisos, ideal para trabajos
+gráficos, visualización de videos y navegación web. Además, su capacidad táctil ofrece una interacción
+más fluida y directa con el sistema operativo y las aplicaciones.
+· Memoria: Con 32 GB de memoria interna LPDDR5x-SDRAM, el XPS 13 ofrece una capacidad multitarea
+superior, permitiendo ejecutar varias aplicaciones simultáneamente sin pérdida de rendimiento. La
+tecnología LPDDR5x asegura una mayor velocidad y eficiencia energética.
+· Almacenamiento: Dispone de un SSD de 1 TB, lo que garantiza un arranque del sistema rápido y
+amplísimo espacio para almacenar documentos, fotos, videos y otros archivos sin preocupaciones.
+· Gráficos: Este modelo incluye un Intel Arc Graphics 140V, proporcionando gráficos de alta calidad,
+adecuados para tareas visuales como la edición de imágenes, vídeos y videojuegos de exigencia
+moderada.
+· Sistema operativo: El Windows 11 Pro está preinstalado, ofreciendo una interfaz moderna, con mayor
+seguridad, funcionalidades avanzadas para profesionales y compatibilidad con las últimas
+aplicaciones.
+· Color: El portátil presenta un elegante acabado en platino, brindando un diseño sofisticado y
+resistente, que se adapta perfectamente a cualquier entorno profesional o personal.
+Este DELL XPS 13 9350 es ideal para aquellos que buscan una experiencia de computación premium,
+combinando potencia, rendimiento y portabilidad en un solo dispositivo.
+*Algunos datos de esta descripción pueden ser opcionales y no estar presentes en este código de producto
+específico. Consulte la ficha técnica
+DISCO DURO
+Disco duro
+1.000
+Garantía :
+12meses
+Tipo Soporte 1
+SSD
+Interfaz Soporte 1
+NVMe
+Número Soportes
+1
+Página número: 2
+GRÁFICA
+Gráfica integrada
+PROCESADOR
+Familia Procesador
+Si
+Intel Core
+Ultra 7
+Fabricante de la
+gráfica
+Modelo de procesador
+Intel
+258V
+Modelo gráfica
+Intel Arc
+Graphics
+8
+Frecuencia del
+procesador
+PANTALLA
+Fabricante procesador
+4,8 GHZ
+Intel
+Número de núcleos de
+procesador
+Tamaño pantalla
+13,4
+Pantalla táctil
+Si
+Tipo de pantalla
+OLED
+Resolución (Estándar)
+2880 x 1800
+Luminosidad
+400
+Contraste
+1.000.000
+Tipologia HD
+3K
+Retroiluminación
+Yes
+Relación de aspecto
+nativa
+16:10
+Tiempo máximo de
+refresco
+60
+Espacio de color RGB
+DCI-P3
+DIMENSIONES & PESO
+Peso sin embalaje
+1,18
+Altura
+1,48
+Ancho
+29,53
+Profundidad
+19,91
+GENERAL
+Color
+Plata
+Trusted Platform
+Module (TPM)
+Si
+Material Chasis
+Aluminio
+Detección huella
+dactilar
+Si
+Potencia adaptador
+AC
+60
+2 en 1 Detachable
+No
+Convertibili 2 in 1
+No
+Potencia de adaptador
+AC
+60
+CONEXIONES
+Conexión a red móvil
+No
+Ethernet
+Puerto HDMI
+Si
+HDMI micro
+Conexión para
+Dockstation del
+fabricante
+RAM
+RAM Instalada
+32
+UNIDADES ÓPTICAS
+Tipología unidad
+instalada
+N
+No presente
+Porte VGA
+No
+No
+TECLADO Y SISTEMA PARA APUNTAR
+Teclado numérico
+No
+AUDIO
+Micrófono Integrado
+Si
+BATERÍA
+Número celdas
+3
+WEBCAM
+Webcam integrada
+Si
+Nº total de puertos
+USB
+Wireless (standard)
+RAM Máxima
+32
+Teclado
+retroiluminado
+Capacidad de batería
+55
+Resolución Webcam
+1920 x 1080
+0
+No
+Wifi 7
+(802.11be)
+Si
+Puertos USB 2.0 High
+Speed Type-A
+Bluetooth
+Si
+Display Port
+Tipo de puerto de
+carga
+Tecnología de la RAM
+LPDDR5X
+Infrarrojos
+0
+Puertos USB 3.2 Gen 1
+SuperSpeed (5 Gbps)
+No
+USB Type-C
+Si
+Type-A
+Puerto Thunderbolt
+Si
+Mini Display Port
+No
+Tipo de RAM
+Cámara frontal tipo
+HD
+0
+On-board
+Full HD
+LECTORES MEMORY/SMART CARD
+Compact Flash (CF)
+No
+Memory stick (ms)
+No
+Memory Stick Duo
+(MSD)
+No
+Memory Stick Pro (MS
+Pro)
+No
+Memory Stick PRO
+Duo (MSPD)
+No
+Memory Stick PRO-HG
+Duo (MSPDX)
+No
+Memory stick micro
+(mms)
+No
+Transflash / micro sd
+No
+Multimedia Card
+(MMC)
+No
+MMCplus
+No
+Multimedia Card
+Reduced Size (RS-
+MMC)
+No
+Secure Digital card
+(SD)
+No
+Secure digital mini
+No
+(msd)
+SISTEMA OPERATIVO & SOFTWARE
+Version S.O.
+Windows 11
+Pro
+Bit S.O.
+64
+Software Incluido
+Intel® ME Disabled
+TAMAÑO CON EMBALAJE
+Lato A
+CERTIFICACIÓNES
+Energy star
+39,6 cm
+Si
+Lato B
+Certificazión wi-fi
+32,16 cm
+Si
+Lato C
+Otras certificaciones
+10,6
+Peso con embalaje
+2,73 kg
+Este portátil cuenta con la certificación ENERGY STAR® y
+cumple los criterios más exigentes con el registro EPEAT
+Gold, ahora con la designación Climate+. Con Climate+,
+este portátil cumple los procedimientos recomendados
+del sector para la descarbonización
+Opciones
+ACCESORIOS ORDENADORES PORTÁTILES DOCKING STATION Y EXPANSION PARA PORTÁTILES

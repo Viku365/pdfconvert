@@ -1,0 +1,124 @@
+{
+    "Empresa": [
+        {
+            "text": "ARTI SOFTWARE TEC. INF. S.L.",
+            "confidence_score": 1.0
+        }
+    ],
+    "Telefono": [
+        {
+            "text": "+34656359467",
+            "confidence_score": 1.0
+        }
+    ],
+    "e-mail": [
+        {
+            "text": "jaromero@artisoft.es",
+            "confidence_score": 1.0
+        }
+    ],
+    "Marca": [
+        {
+            "text": "Dell",
+            "confidence_score": 0.97
+        }
+    ],
+    "Modelo": [
+        {
+            "text": "XPS 14 9440U7",
+            "confidence_score": 0.99
+        }
+    ],
+    "Bateria": [
+        {
+            "text": "155H32GB1TB",
+            "confidence_score": 0.99
+        }
+    ],
+    "Disco Duro": [
+        {
+            "text": "SSD1",
+            "confidence_score": 0.88
+        },
+        {
+            "text": "1000 GB SSD",
+            "confidence_score": 0.99
+        },
+        {
+            "text": "1.000",
+            "confidence_score": 0.97
+        }
+    ],
+    "Pantalla": [
+        {
+            "text": "4.5\"",
+            "confidence_score": 1.0
+        },
+        {
+            "text": "14,5\"",
+            "confidence_score": 1.0
+        },
+        {
+            "text": "14,5",
+            "confidence_score": 0.95
+        }
+    ],
+    "precio": [
+        {
+            "text": "2.628,52 €",
+            "confidence_score": 1.0
+        }
+    ],
+    "Procesador": [
+        {
+            "text": "Intel Core Ultra 7 155H",
+            "confidence_score": 1.0
+        },
+        {
+            "text": "Modelo",
+            "confidence_score": 0.54
+        },
+        {
+            "text": "Intel Core\nUltra 7\nModelo de procesador\n155H",
+            "confidence_score": 0.99
+        }
+    ],
+    "Memoria RAM": [
+        {
+            "text": "32 GB",
+            "confidence_score": 1.0
+        }
+    ],
+    "Grafica": [
+        {
+            "text": "NVIDIA Geforce RTX 4050",
+            "confidence_score": 0.99
+        },
+        {
+            "text": "Nvidia",
+            "confidence_score": 0.87
+        },
+        {
+            "text": "gráfica\nGeforce RTX\ngráfica\n4050",
+            "confidence_score": 0.8
+        }
+    ],
+    "Sistema Operativo": [
+        {
+            "text": "Windows 11 Pro",
+            "confidence_score": 0.99
+        }
+    ],
+    "Garantia": [
+        {
+            "text": "12meses",
+            "confidence_score": 0.99
+        }
+    ],
+    "Peso": [
+        {
+            "text": "1,74 kg",
+            "confidence_score": 1.0
+        }
+    ]
+}

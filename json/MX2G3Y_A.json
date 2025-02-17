@@ -1,0 +1,96 @@
+{
+    "Empresa": [
+        {
+            "text": "ARTI SOFTWARE TEC. INF. S.L.",
+            "confidence_score": 1.0
+        }
+    ],
+    "Telefono": [
+        {
+            "text": "+34656359467",
+            "confidence_score": 1.0
+        }
+    ],
+    "e-mail": [
+        {
+            "text": "jaromero@artisoft.es",
+            "confidence_score": 1.0
+        }
+    ],
+    "precio": [
+        {
+            "text": "3.849,00 €",
+            "confidence_score": 1.0
+        }
+    ],
+    "Marca": [
+        {
+            "text": "Apple",
+            "confidence_score": 0.96
+        },
+        {
+            "text": "Apple",
+            "confidence_score": 0.89
+        }
+    ],
+    "Procesador": [
+        {
+            "text": "CPU de 14 núcleos",
+            "confidence_score": 0.95
+        },
+        {
+            "text": "Apple M",
+            "confidence_score": 0.74
+        }
+    ],
+    "Memoria RAM": [
+        {
+            "text": "36 GB",
+            "confidence_score": 0.98
+        },
+        {
+            "text": "36 GB",
+            "confidence_score": 0.99
+        }
+    ],
+    "Disco Duro": [
+        {
+            "text": "1 TB",
+            "confidence_score": 0.97
+        },
+        {
+            "text": "1.064 GB",
+            "confidence_score": 0.99
+        }
+    ],
+    "Modelo": [
+        {
+            "text": "MacBook Pro",
+            "confidence_score": 0.97
+        }
+    ],
+    "Grafica": [
+        {
+            "text": "Gráfica integrada",
+            "confidence_score": 0.93
+        }
+    ],
+    "Garantia": [
+        {
+            "text": "36meses",
+            "confidence_score": 1.0
+        }
+    ],
+    "Pantalla": [
+        {
+            "text": "14,2 \"",
+            "confidence_score": 0.99
+        }
+    ],
+    "Sistema Operativo": [
+        {
+            "text": "macOS\nVentura",
+            "confidence_score": 0.65
+        }
+    ]
+}

@@ -1,0 +1,140 @@
+{
+    "Empresa": [
+        {
+            "text": "ARTI SOFTWARE TEC. INF. S.L.",
+            "confidence_score": 1.0
+        }
+    ],
+    "Telefono": [
+        {
+            "text": "+34656359467",
+            "confidence_score": 1.0
+        }
+    ],
+    "e-mail": [
+        {
+            "text": "jaromero@artisoft.es",
+            "confidence_score": 1.0
+        }
+    ],
+    "Marca": [
+        {
+            "text": "LG",
+            "confidence_score": 0.95
+        },
+        {
+            "text": "LG",
+            "confidence_score": 1.0
+        },
+        {
+            "text": "LG gram",
+            "confidence_score": 0.97
+        },
+        {
+            "text": "LG",
+            "confidence_score": 0.52
+        }
+    ],
+    "Modelo": [
+        {
+            "text": "gram 17Z90R",
+            "confidence_score": 0.95
+        },
+        {
+            "text": "17Z90R-E.AD78B",
+            "confidence_score": 0.98
+        },
+        {
+            "text": "gram",
+            "confidence_score": 0.92
+        }
+    ],
+    "Pantalla": [
+        {
+            "text": "17\"",
+            "confidence_score": 0.99
+        },
+        {
+            "text": "17 \"",
+            "confidence_score": 1.0
+        }
+    ],
+    "Sistema Operativo": [
+        {
+            "text": "Windows 11 Home",
+            "confidence_score": 0.99
+        }
+    ],
+    "Procesador": [
+        {
+            "text": "i7",
+            "confidence_score": 0.99
+        },
+        {
+            "text": "Intel Core i7",
+            "confidence_score": 1.0
+        },
+        {
+            "text": "i7-1360P",
+            "confidence_score": 0.99
+        }
+    ],
+    "Memoria RAM": [
+        {
+            "text": "32GB",
+            "confidence_score": 0.99
+        },
+        {
+            "text": "32 GB",
+            "confidence_score": 1.0
+        },
+        {
+            "text": "32 GB",
+            "confidence_score": 1.0
+        }
+    ],
+    "Disco Duro": [
+        {
+            "text": "1TB SSD",
+            "confidence_score": 1.0
+        },
+        {
+            "text": "1.000 GB",
+            "confidence_score": 0.99
+        }
+    ],
+    "precio": [
+        {
+            "text": "2.205,78 €",
+            "confidence_score": 1.0
+        }
+    ],
+    "Peso": [
+        {
+            "text": "1,4 kg",
+            "confidence_score": 0.98
+        },
+        {
+            "text": "1,45 kg",
+            "confidence_score": 0.97
+        }
+    ],
+    "Bateria": [
+        {
+            "text": "13'5 hr",
+            "confidence_score": 0.99
+        }
+    ],
+    "Garantia": [
+        {
+            "text": "36meses",
+            "confidence_score": 1.0
+        }
+    ],
+    "Grafica": [
+        {
+            "text": "RTX™ 3050 Ti",
+            "confidence_score": 0.81
+        }
+    ]
+}

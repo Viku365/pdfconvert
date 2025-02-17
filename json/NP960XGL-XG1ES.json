@@ -1,0 +1,76 @@
+{
+    "Empresa": [
+        {
+            "text": "ARTI SOFTWARE TEC. INF. S.L.",
+            "confidence_score": 1.0
+        }
+    ],
+    "Telefono": [
+        {
+            "text": "+34656359467",
+            "confidence_score": 1.0
+        }
+    ],
+    "e-mail": [
+        {
+            "text": "jaromero@artisoft.es",
+            "confidence_score": 1.0
+        }
+    ],
+    "Modelo": [
+        {
+            "text": "SAMSUNG",
+            "confidence_score": 0.38
+        },
+        {
+            "text": "Geforce",
+            "confidence_score": 0.61
+        },
+        {
+            "text": "3 AÑOS",
+            "confidence_score": 0.53
+        }
+    ],
+    "Pantalla": [
+        {
+            "text": "16\",",
+            "confidence_score": 0.95
+        }
+    ],
+    "Bateria": [
+        {
+            "text": "155H",
+            "confidence_score": 0.77
+        }
+    ],
+    "Memoria RAM": [
+        {
+            "text": "16GB",
+            "confidence_score": 0.89
+        }
+    ],
+    "Disco Duro": [
+        {
+            "text": "1TB",
+            "confidence_score": 1.0
+        }
+    ],
+    "Grafica": [
+        {
+            "text": "RTX 4050",
+            "confidence_score": 0.81
+        }
+    ],
+    "Sistema Operativo": [
+        {
+            "text": "Windows 11 HOME",
+            "confidence_score": 0.8
+        }
+    ],
+    "precio": [
+        {
+            "text": "2.425,46 €",
+            "confidence_score": 0.99
+        }
+    ]
+}
