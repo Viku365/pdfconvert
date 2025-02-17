@@ -5,6 +5,7 @@ from pymongo import MongoClient
 import openai
 import os
 from dotenv import load_dotenv
+import time  
 
 # 🔹 Cargar variables de entorno
 load_dotenv()
@@ -141,8 +142,10 @@ if not st.session_state.compra_realizada:
             st.session_state.ordenadores_recomendados = []
             st.session_state.mensaje_compra = None
 
-            loading_message = st.empty()  # Mensaje de carga
-            loading_message.info("🔍 Consultando...")  # Mostrar mensaje de carga
+            loading_message = st.empty()  
+            loading_message.info("🔍 Consultando...")
+
+            time.sleep(1.5)
 
             intent, entidades = get_intent_and_entities(st.session_state.user_input)
 
@@ -157,6 +160,10 @@ if not st.session_state.compra_realizada:
 
                 if ordenadores_encontrados:
                     st.session_state.ordenadores_recomendados = formatear_respuesta_ordenador(ordenadores_encontrados)
+
+            else:
+                # 🔹 Mensaje para consultas fuera de contexto
+                st.warning("❌ No puedo responderte eso ahora mismo.")
 
 if not st.session_state.compra_realizada and st.session_state.ordenadores_recomendados:
     st.success("🛒 Te recomendamos estos ordenadores:")
