@@ -9,14 +9,14 @@ import os
 import time
 import json
 from dotenv import load_dotenv
-
+from io import BytesIO
 
 # 🔹 Cargar variables de entorno
 load_dotenv()
 
 # 🔹 Configuración de Azure Document Intelligence
-pdf_endpoint = st.secrets.get("AZURE_DOCUMENT_INTELLIGENCE_ENDPOINT", "")
-pdf_api_key = st.secrets.get("AZURE_DOCUMENT_INTELLIGENCE_KEY", "")
+pdf_endpoint = st.secrets["FORM_RECOGNIZER_ENDPOINT"].rstrip("/")  # Asegurar que no tiene "/"
+pdf_api_key = st.secrets["FORM_RECOGNIZER_KEY"]
 
 pdf_client = DocumentAnalysisClient(endpoint=pdf_endpoint, credential=AzureKeyCredential(pdf_api_key))
 
@@ -60,23 +60,37 @@ if "pdf_procesado" not in st.session_state:
 if "ordenador_extraido" not in st.session_state:
     st.session_state.ordenador_extraido = None
 
-# 🔹 Función para extraer texto de PDF
+# 🔹 Función para extraer texto de PDF con Azure Document Intelligence
 def extraer_texto_de_pdf(pdf_bytes):
-    """Extrae texto de un PDF usando Azure Document Intelligence."""
+    """Envía un PDF a Azure Document Intelligence y extrae el texto."""
     try:
-        from io import BytesIO
         pdf_stream = BytesIO(pdf_bytes)
 
-        poller = pdf_client.begin_analyze_document("prebuilt-document", pdf_stream)
+        # 📤 Enviar el PDF a Azure Form Recognizer
+        print("📤 Enviando PDF a Azure Document Intelligence...")
+        poller = pdf_client.begin_analyze_document(
+            model_id="prebuilt-document",
+            document=pdf_stream
+        )
+
+        # ⏳ Esperar la respuesta de Azure
         result = poller.result()
+        print("📥 Respuesta recibida de Azure.")
 
+        # 🔹 Validar si se extrajo texto
         if not result.pages:
-            return "Error: No se encontró texto en el documento."
+            print("❌ Error: No se encontró texto en el documento.")
+            return None
 
+        # ✅ Extraer el texto detectado
         texto_extraido = "\n".join([line.content for page in result.pages for line in page.lines])
+        print(f"✅ Texto extraído:\n{texto_extraido}")
         return texto_extraido.strip()
+
     except Exception as e:
-        return f"Error al procesar PDF: {str(e)}"
+        print(f"❌ Error en Azure Form Recognizer: {str(e)}")
+        return None
+
 
 
 # 🔹 Función para obtener el intent y las entidades
